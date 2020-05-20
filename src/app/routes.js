@@ -33,9 +33,11 @@ module.exports = (app, passport) => {
 
 	//profile view
 	app.get('/profile', isLoggedIn, (req, res) => {
+		res.redirect('http://localhost:3000');
+		/*
 		res.render('profile', {
 			user: req.user
-		});
+		});*/
 	});
 
 	// logout
